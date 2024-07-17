@@ -10,7 +10,7 @@ FROM cgr.dev/chainguard/python
 
 WORKDIR /myapp
 
-COPY main.py /myapp/application.py
+COPY main.py /myapp/main.py
 COPY models.py /myapp/models.py
 COPY templates /myapp/templates
 COPY static /myapp/static
