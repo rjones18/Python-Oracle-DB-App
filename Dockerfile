@@ -16,6 +16,6 @@ COPY templates /myapp/templates
 COPY static /myapp/static
 
 # Make sure you update Python version in path
-COPY --from=builder /home/nonroot/.local/lib/python3.12/site-packages /home/nonroot/.local/lib/python3.12/site-packages
+# COPY --from=builder /home/nonroot/.local/lib/python3.12/site-packages /home/nonroot/.local/lib/python3.12/site-packages
 
 CMD ["python", "/myapp/main.py"]
